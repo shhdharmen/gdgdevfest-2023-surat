@@ -1,5 +1,11 @@
 # gdgdevfest-2023-surat
 
+## Slide deck
+
+- [PDF](#TBA)
+
+## Code samples
+
 - Example with pre-built theme - [📁 ng-mat-address-pre-built](https://github.com/shhdharmen/gdgdevfest-2023-surat/tree/main/ng-mat-address-pre-built)
 - Example with custom theme - [📁 ng-mat-address](https://github.com/shhdharmen/gdgdevfest-2023-surat/tree/main/ng-mat-address)
 
