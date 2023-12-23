@@ -1,0 +1,44 @@
+@use "@angular/material" as mat;
+@use "../../styles/components";
+
+.dark-theme .personal-theme {
+  $personal-dark-primary: mat.define-palette(mat.$deep-purple-palette);
+  $personal-dark-accent: mat.define-palette(
+    mat.$yellow-palette,
+    A200,
+    A100,
+    A400
+  );
+
+  // The warn palette is optional (defaults to red).
+  $personal-dark-warn: mat.define-palette(mat.$red-palette, 300);
+
+  // Create the theme object. A theme consists of configurations for individual
+  // theming systems such as "color" or "typography".
+  $personal-dark-theme: mat.define-dark-theme(
+    (
+      color: (
+        primary: $personal-dark-primary,
+        accent: $personal-dark-accent,
+        warn: $personal-dark-warn,
+      ),
+    )
+  );
+
+  // Include theme styles for core and each component used in your app.
+  // Alternatively, you can import and @include the theme mixins for each component
+  // that you are using.
+  @include mat.core-color($personal-dark-theme);
+  @include mat.card-color($personal-dark-theme);
+  @include mat.form-field-color($personal-dark-theme);
+  @include mat.input-color($personal-dark-theme);
+  @include mat.select-color($personal-dark-theme);
+  @include mat.autocomplete-color($personal-dark-theme);
+  @include mat.radio-color($personal-dark-theme);
+  @include mat.button-color($personal-dark-theme);
+  @include mat.icon-button-color($personal-dark-theme);
+  @include mat.icon-color($personal-dark-theme);
+  @include mat.menu-color($personal-dark-theme);
+
+  @include components.personal-theme($personal-dark-theme);
+}

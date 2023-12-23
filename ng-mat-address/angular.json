@@ -56,7 +56,7 @@
               {
                 "bundleName": "dark-theme",
                 "inject": false,
-                "input": "src/themes/dark.scss"
+                "input": "src/themes/dark/index.scss"
               }
             ],
             "scripts": []

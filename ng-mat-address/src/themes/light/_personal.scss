@@ -1,0 +1,55 @@
+@use "@angular/material" as mat;
+@use "../../styles/components";
+
+.personal-theme {
+  $personal-light-primary: mat.define-palette(mat.$green-palette);
+  $personal-light-accent: mat.define-palette(
+    mat.$deep-orange-palette,
+    A200,
+    A100,
+    A400
+  );
+
+  // Create the theme object. A theme consists of configurations for individual
+  // theming systems such as "color" or "typography".
+  $personal-light-theme: mat.define-light-theme(
+    (
+      color: (
+        primary: $personal-light-primary,
+        accent: $personal-light-accent,
+      ),
+      typography:
+        mat.define-typography-config(
+          $font-family: "cursive",
+        ),
+    )
+  );
+
+  // Include theme styles for core and each component used in your app.
+  // Alternatively, you can import and @include the theme mixins for each component
+  // that you are using.
+  @include mat.core-color($personal-light-theme);
+  @include mat.core-typography($personal-light-theme);
+  @include mat.card-color($personal-light-theme);
+  @include mat.card-typography($personal-light-theme);
+  @include mat.form-field-color($personal-light-theme);
+  @include mat.form-field-typography($personal-light-theme);
+  @include mat.input-color($personal-light-theme);
+  @include mat.input-typography($personal-light-theme);
+  @include mat.select-color($personal-light-theme);
+  @include mat.select-typography($personal-light-theme);
+  @include mat.autocomplete-color($personal-light-theme);
+  @include mat.autocomplete-typography($personal-light-theme);
+  @include mat.radio-color($personal-light-theme);
+  @include mat.radio-typography($personal-light-theme);
+  @include mat.button-color($personal-light-theme);
+  @include mat.button-typography($personal-light-theme);
+  @include mat.icon-button-color($personal-light-theme);
+  @include mat.icon-button-typography($personal-light-theme);
+  @include mat.icon-color($personal-light-theme);
+  @include mat.icon-typography($personal-light-theme);
+  @include mat.menu-color($personal-light-theme);
+  @include mat.menu-typography($personal-light-theme);
+
+  @include components.personal-theme($personal-light-theme);
+}

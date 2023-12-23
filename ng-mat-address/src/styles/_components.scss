@@ -10,7 +10,7 @@
   $is-dark-theme: map.get($theme, is-dark);
   $exportBackgroundOpacity: if($is-dark-theme, 0.25, 0.25);
 
-  .personal-theme {
+  .mat-mdc-card {
     --mdc-elevated-card-container-color: #{mat.get-color-from-palette(
         $primary-palette,
         300,
