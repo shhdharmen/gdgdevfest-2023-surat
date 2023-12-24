@@ -2,7 +2,7 @@
 
 ## Slide deck
 
-- [PDF](#TBA)
+- [PDF](./GDG%20DevFest%20Surat%20-%20Enhancing%20User%20Experience%20with%20Angular%20Material%20Themes.pdf)
 
 ## Code samples
 
